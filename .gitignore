@@ -36,3 +36,4 @@ Makefile.in
 /.autotools
 /.settings
 /.pydevproject
+/CMakeLists.txt.user
