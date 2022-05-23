@@ -7,6 +7,7 @@ Consistent Overhead Byte Stuffing (COBS)
 :Copyright: 2017 Craig McQueen
 
 test string
+test string again
 C functions for encoding and decoding COBS.
 
 -----
