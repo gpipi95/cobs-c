@@ -14,11 +14,12 @@ set(COBS_SRC)
 
 
 add_subdirectory(tests-c)
+add_subdirectory(crc)
 
 
 list(APPEND COBS_SRC
     cobs.c
-    COBSClass.cpp
+    COBSCodec.cpp
 )
 
 find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
@@ -31,5 +32,6 @@ add_executable(cobs-c
 
 target_link_libraries(cobs-c 
   tests-lib
+  crc-lib
   Qt${QT_VERSION_MAJOR}::Core
 )
